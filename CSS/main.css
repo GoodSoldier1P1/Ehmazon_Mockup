@@ -1,0 +1,132 @@
+* {
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header header header"
+        "whitespace1 content content content whitespace2"
+        "whitespace1 content content content whitespace2"
+        "whitespace1 content content content whitespace2"
+        "footer footer footer footer footer";
+}
+
+.container {
+    /* border: 1px solid black; */
+    display: grid;
+    text-align: center;
+}
+
+.header {
+    /* border: 1px solid black; */
+    grid-area: header;
+    height: 10vh;
+    margin-top: 30px;
+}
+
+.whitespace1 {
+    /* border: 1px solid black; */
+    grid-area: whitespace1;
+    height: 45vh;
+}
+
+.content {
+    /* border: 1px solid red; */
+    grid-area: content;
+    height: 45vh;
+}
+
+.whitespace2 {
+    /* border: 1px solid black; */
+    grid-area: whitespace2;
+    height: 45vh;
+}
+
+.footer {
+    border-top: 2px solid lightgrey;
+    border-top-style: inset;
+    grid-area: footer;
+    height: 20vh;
+    align-items: end;
+    padding: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    color: white;
+    width: 80%;
+    background-color: rgb(255, 190, 49) !important;
+    border: 0.5px solid black !important;
+}
+
+.my-email {
+    size: 10 !important;
+}
+
+form {
+    border: 1px solid black;
+    border-radius: 1%;
+    padding: 20px;
+}
+
+ul {
+    text-align: left;
+    list-style-type: none;
+}
+
+ul li:before {
+    content: "?";
+    margin-right: 10px;
+    color: blue;
+}
+
+hr {
+    border: none;
+    color: black;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    content: 'New to Amazon?';
+    padding: 0 80px;
+    position: relative;
+    top: -13px;
+}
+
+.create {
+    background-color: lightgrey !important;
+    border: 1px solid black;
+    color: black;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.form-control {
+    border: 1px solid rgb(97, 97, 97) !important ;
+}
+
+.header > div {
+    border: 1px solid black;
+    width: 10%;
+    margin-left: 43%;
+    margin-top: 2%;
+    height: 75%;
+    background-color: lightgray;
+    color: lightgray;
+}

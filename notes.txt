@@ -1,0 +1,25 @@
+<form action="">
+                    
+                        <label for="email">Email(phone or mobile accounts)</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+        
+                    
+                        <label for="password" class="form-password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                    
+                    <button type="submit" class="button">Continue</button>
+                </form>
+
+
+
+
+                form {
+    border: 1px solid black;
+    max-width: 400px;
+    width: 10%;
+    min-width: 250px;
+    margin: 10vh;
+    padding: 2%;
+    border-radius: 2%;
+    height: 30vh;
+}
